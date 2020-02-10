@@ -70,13 +70,13 @@ class Unbundler:
                 self.component_name = json.load(data_file)[NAME]
         else:
             self.component_name=""
-        
+
         # Get the path to the LMS
         self.path_to_lms = os.path.join(self.path_to_lms, instance_name)
 
     # Modifies the config file for the desired LMS.
     def modify_config_file(self):
-        self.print_cmd("Update LMS config, located at: {}.".format(RELATIVE_PATH_CONFIG))        
+        self.print_cmd("Update LMS config, located at: {}.".format(RELATIVE_PATH_CONFIG))
         if not self.dry_run:
             with open(os.path.join(self.path_to_lms, RELATIVE_PATH_CONFIG), WRITE) as data_file:
                 data = {}
@@ -113,7 +113,7 @@ class Unbundler:
         self.print_cmd("cd {}".format(path))
         if not self.dry_run:
             os.chdir(path)
-    
+
     # Check if the script is running as admin
     @staticmethod
     def is_admin():
@@ -185,7 +185,7 @@ class Unbundler:
 
         if not self.dry_run:
             print("Done! All you need to do now is run `npm start` in your BSI directory and visit your local LMS on the web.")
-            
+
             end_time = time.time()
             print()
             print("SUCCESS")
@@ -202,13 +202,13 @@ def get_params():
         help="The path to the BSI component you are interested in unbundling.",
         required=True
     )
-    
+
     parser.add_argument(
         "--bsi-path",
         help="The path to your BSI repo, the default is the directory of this script.",
         default=CURRENT_BSI_DIRECTORY
     )
-    
+
     parser.add_argument(
         "--instance-path",
         help="The path to your LMS instances, if it differs from `{}`.".format(PATH_TO_LMS),
