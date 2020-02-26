@@ -58,7 +58,7 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/register": "^7.0.0",
-    "@brightspace-ui/core": "^1",
+    "@brightspace-ui/core": "^1.31",
     "@brightspace-ui/intl": "^3",
     "@d2l/switch": "Brightspace/d2l-switch.git#semver:^3",
     "@koa/cors": "^3.0.0",
@@ -84,7 +84,6 @@
     "d2l-consistent-evaluation": "BrightspaceHypermediaComponents/consistent-evaluation#semver:^0",
     "d2l-content-store": "Brightspace/d2l-content-store#semver:^0",
     "d2l-cpd": "Brightspace/continuous-professional-development#semver:^1",
-    "d2l-dropdown": "BrightspaceUI/dropdown#semver:^7",
     "d2l-fetch": "Brightspace/d2l-fetch.git#semver:^2",
     "d2l-fetch-auth": "^1.5.2",
     "d2l-fetch-dedupe": "^1.1.0",
@@ -94,7 +93,6 @@
     "d2l-my-courses": "Brightspace/d2l-my-courses-ui#semver:^11",
     "d2l-my-dashboards": "github:Brightspace/d2l-my-dashboards-ui#semver:^3",
     "d2l-navigation": "BrightspaceUI/navigation#semver:^4",
-    "d2l-offscreen": "BrightspaceUI/offscreen#semver:^4",
     "d2l-opt-in-flyout-webcomponent": "Brightspace/d2l-opt-in-flyout-webcomponent#semver:^2",
     "d2l-organizations": "BrightspaceHypermediaComponents/organizations#semver:^5",
     "d2l-outcomes-level-of-achievements": "Brightspace/outcomes-level-of-achievement-ui.git#semver:^2",
@@ -142,6 +140,6 @@
   },
   "dependencies": {},
   "engines": {
-    "npm": "<=6.8.0"
+    "npm": "<=6.13.7"
   }
 }
